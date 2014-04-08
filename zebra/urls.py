@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, url
 
-from zebra import views
+from . import views
 
 urlpatterns = patterns('',
     url(r'webhooks/$',     views.webhooks,          name='webhooks'),

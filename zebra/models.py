@@ -1,7 +1,7 @@
 from django.db import models
 
-from zebra import mixins
-from zebra.conf import options
+from . import mixins
+from .conf import options
 
 
 class StripeCustomer(models.Model, mixins.StripeMixin, mixins.StripeCustomerMixin):

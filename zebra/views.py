@@ -2,8 +2,8 @@ from django.http import HttpResponse
 from django.utils import simplejson
 from django.db.models import get_model
 import stripe
-from zebra.conf import options
-from zebra.signals import *
+from .conf import options
+from .signals import *
 from django.views.decorators.csrf import csrf_exempt
 
 import logging

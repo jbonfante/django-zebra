@@ -2,8 +2,8 @@ from django import forms
 from django.core.exceptions import NON_FIELD_ERRORS
 from django.utils.dates import MONTHS
 
-from zebra.conf import options
-from zebra.widgets import NoNameSelect, NoNameTextInput
+from .conf import options
+from .widgets import NoNameSelect, NoNameTextInput
 
 
 class MonospaceForm(forms.Form):
