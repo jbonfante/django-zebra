@@ -1,6 +1,7 @@
 import stripe
 
 from .conf import options
+import collections
 
 
 def _get_attr_value(instance, attr, default=None):
@@ -30,7 +31,7 @@ def _get_attr_value(instance, attr, default=None):
     value = default
     if hasattr(instance, attr):
         value = getattr(instance, attr)
-        if callable(value):
+        if isinstance(value, collections.Callable):
             value = value()
     return value
 
